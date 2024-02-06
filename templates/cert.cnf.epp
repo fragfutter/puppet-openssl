@@ -17,11 +17,6 @@
 # file managed by puppet
 #
 
-# This definition stops the following lines choking if HOME isn't
-# defined.
-HOME                    = .
-RANDFILE                = $ENV::HOME/.rnd
-
 [ req ]
 default_bits            = <%= $default_bits %>
 default_md              = <%= $default_md %>
